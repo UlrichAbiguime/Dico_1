@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- translate down... alpha to invisible -->
+    <scale android:duration="700"
+        android:fromXScale="0"
+        android:toXScale="0"
+        android:fromYScale="0"
+        android:startOffset="0"
+        android:toYScale="1" />
+
+
+    <alpha android:duration="700"
+        android:startOffset="0"
+        android:fromAlpha="1"
+        android:toAlpha="0" />
+
+
+</set>

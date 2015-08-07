@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mygray"
+    android:padding="3dp"
+    android:animateLayoutChanges="true"
+    tools:context="dico.wule.tg.dico.fragments.DictionnaryFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/lny_top_languages"
+            android:layout_height="45dp">
+
+            <dico.wule.tg.dico.customviews.MySpinner
+                android:id="@+id/spinner_lang_from"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="#00000000"
+                android:layout_height="wrap_content" />
+
+            <!--
+             put a button to interchange the languages.
+             -->
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/exchange"
+                android:id="@+id/iv_exchange"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+            <dico.wule.tg.dico.customviews.MySpinner
+                android:id="@+id/spinner_lang_to"
+                android:layout_width="0dp"
+                android:background="#00000000"
+                android:layout_weight="4"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <dico.wule.tg.dico.customviews.CustomScrollview
+            android:id="@+id/scrollview_dictfr"
+            android:scrollbars="none"
+            android:layout_below="@+id/lny_top_languages"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:animateLayoutChanges="true"
+                android:id="@+id/lny_maincontent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/dict_page_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RelativeLayout
+                    android:animateLayoutChanges="true"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/rl_translate"
+                    android:background="@drawable/trans_bt_bg"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:onClick="letclick"
+                    android:descendantFocusability="beforeDescendants"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:animateLayoutChanges="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ff15b0ff"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text=""
+                        android:textColor="@color/from_gray"
+                        android:background="@null"
+                        android:id="@+id/tv_totranslate"
+                        android:padding="4dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:layout_toLeftOf="@+id/iv_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:maxWidth="40dp"
+                        android:layout_alignParentRight="true"
+                        android:maxHeight="40dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </RelativeLayout>
+
+                <include
+                    android:animateLayoutChanges="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    layout="@layout/pinyin_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <include
+                    android:animateLayoutChanges="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    layout="@layout/dict_page_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <dico.wule.tg.dico.customviews.CustomListview
+                        android:animateLayoutChanges="true"
+                        android:id="@+id/lv_historic_main"
+                        android:layout_width="match_parent"
+                        android:dividerHeight="3dp"
+                        android:divider="@null"
+                        android:layout_height="match_parent" />
+
+                    <ProgressBar
+                        android:id="@+id/hv_loading_sv"
+                        android:visibility="gone"
+                        style="@style/Base.Widget.AppCompat.ProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_totalcount"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </dico.wule.tg.dico.customviews.CustomScrollview>
+    </RelativeLayout>
+</FrameLayout>

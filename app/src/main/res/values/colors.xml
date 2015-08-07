@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="mywhite">#ffffff</color>
+    <color name="mygray">#dddddd</color>
+    <color name="mydrakergray">#666666</color>
+    <color name="from_gray">#aaaaaa</color>
+    <color name="myyellow">#ffc8c61b</color>
+    <color name="translate_off">#55000000</color>
+    <color name="translate_on">#22000000</color>
+    <color name="hsv_item_desactivate">#777777</color>
+    <color name="hsv_item_active">#ffffff</color>
+    <color name="transparent_dark_1">#22000000</color>
+    <color name="transparent_dark_2">#66000000</color>
+    <color name="mytransparent">#00000000</color>
+    <color name="setup_blue_normal">#ff0699ba</color>
+    <color name="setup_blue_pressed">#ff06566d</color>
+
+    <color name="setup_yellow_normal">#ffffda14</color>
+    <color name="setup_yellow_pressed">#ff6b6d01</color>
+
+    <color name="pressed_blue">#aa3b99ff</color>
+    <color name="sheetgreen">#ff28b233</color>
+    <color name="sheetblue">#ff26a2ca</color>
+    <color name="sheetred">#ffff3313</color>
+
+</resources>

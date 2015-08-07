@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mywhite"
+    tools:context="dico.wule.tg.dico.activities.SetupNoteActivity">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/sheetblue"
+        android:id="@+id/sheet_2"
+        android:minHeight="120dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_sheet2_top"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:paddingTop="10dp"
+            android:layout_height="35dp">
+            <ImageView
+                android:src="@drawable/star_des"
+                android:layout_width="wrap_content"
+                android:id="@+id/iv_toFav"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/iv_toFav"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sheet2_textviews"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@null"
+            android:visibility="visible"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:text="hrloo"
+                    android:textColor="@color/mywhite"
+                    android:id="@+id/tv_translated"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/lny_comments"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/tv_translated"
+                    android:layout_width="match_parent"
+                    android:minHeight="10dp"
+                    android:padding="5dp"
+                    android:background="@null"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:src="@drawable/note"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_sheet2_progressing"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@null"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:minHeight="40dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#fff9ff79"
+                    android:layout_width="wrap_content"
+                    android:text="..."
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_sheet2_errormess"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="120px">
+
+            <ImageView
+                android:id="@+id/iv_error"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:src="@drawable/error_mess"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_height="80px" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:text="@string/network_error"
+                android:textColor="@color/mywhite"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/iv_error"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- a text zone on the bottom part. -->
+
+    <EditText
+        android:layout_below="@id/sheet_2"
+        android:id="@+id/ed_notebody"
+        android:minLines="10"
+        android:padding="5dp"
+        android:text=""
+        android:hint="@string/add_note_hint"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/lny_bts"
+        android:gravity="start"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/lny_bts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:text="Valid"
+            android:onClick="saveFavNote"
+            android:textColor="@color/mywhite"
+            android:textSize="14sp"
+            android:id="@+id/bt_validate"
+            android:layout_weight="1"
+            android:background="@drawable/setupnotebutton_selector"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:text="Cancel"
+            android:onClick="cancelNote"
+            android:textColor="@color/mywhite"
+            android:textSize="14sp"
+            android:id="@+id/bt_cancel"
+            android:layout_weight="1"
+            android:background="@drawable/cancelnotebutton_selector"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

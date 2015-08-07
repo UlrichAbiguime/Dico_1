@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dico</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">Search</string>
+    <string name="network_error">Network Error</string>
+    <string name="textsize">Modify the text size</string>
+
+    <!-- available languages  names -->
+    <string-array name="lang_from">
+        <item name="en">English</item>
+        <item name="fr">Francais</item>
+        <item name="zh">中文</item>
+        <item name="spa">Espagnol</item>
+        <item name="pt">Portuguese</item>
+        <!--   <item name="ru">Russian</item>-->
+    </string-array>
+
+    <!-- available languages  names -->
+   
+    <string name="title_activity_setup_note">SetupNoteActivity</string>
+    <string name="sheet_1_hint">Tap to write ..</string>
+    <string name="isitemanimationdone">isitemanimationdone</string>
+    <string name="add_note_hint">Fill Note</string>
+    <string name="title_activity_read_only_note">ReadOnlyNoteActivity</string>
+    <string name="nodisponible">Not disponible in V1</string>
+    <string name="pinyin_down">down</string>
+    <string name="pinyin_up">up</string>
+    <string name="all">All</string>
+    <string name="loaded">entries loaded.</string>
+</resources>

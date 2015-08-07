@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frm_topbar"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/mygray"
+    android:layout_margin="5dp"
+    android:layout_marginTop="20dp"
+    >
+    <FrameLayout
+        android:onClick="notdisponible"
+        android:orientation="vertical" android:layout_width="0dp"
+        android:layout_weight="7"
+        android:background="@color/mygray"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/ed_search"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_radius"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/search_hint"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:id="@+id/iv_settings_bt"
+        android:src="@drawable/settings_icon"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

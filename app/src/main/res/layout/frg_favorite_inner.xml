@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent">
+    <ProgressBar
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_marginTop="5dp"
+        android:id="@+id/pb_updating"
+        android:background="@null"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:animateLayoutChanges="true"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sv_favorite_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/mygray"
+        android:fillViewport="false">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/gridlayout"
+            android:layout_width="match_parent"
+            grid:columnCount="3"
+            grid:orientation="horizontal"
+            android:background="@color/mygray"
+            android:animateLayoutChanges="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_first"
+                android:animateLayoutChanges="true"
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                grid:layout_columnSpan="2"
+                grid:layout_rowSpan="2"
+                grid:layout_gravity="fill"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_second"
+                android:animateLayoutChanges="true"
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_third"
+                android:animateLayoutChanges="true"
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                />
+
+        </android.support.v7.widget.GridLayout>
+    </ScrollView>
+
+</LinearLayout>

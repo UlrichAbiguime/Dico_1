@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">中通翻译</string>
+    <string name="hello_world">大家好</string>
+    <string name="action_settings">设置</string>
+    <string name="search_hint">搜索</string>
+    <string name="network_error">网络异常：请检查你网络情况</string>
+    <string name="textsize">文字大小</string>
+    <string name="pinyin_down">down</string>
+    <string name="pinyin_up">up</string>
+    <!-- available languages  names -->
+    <string-array name="lang_from">
+        <item name="en">English</item>
+        <item name="fr">Francais</item>
+        <item name="zh">中文</item>
+        <item name="spa">Espagnol</item>
+        <item name="pt">Portuguese</item>
+        <!--   <item name="ru">Russian</item>-->
+    </string-array>
+
+    <!-- available languages  names -->
+    <string name="title_activity_setup_note">SetupNoteActivity</string>
+    <string name="sheet_1_hint">点击输入 ..</string>
+    <string name="isitemanimationdone">isitemanimationdone</string>
+    <string name="japanese">なお、日本では英語風に「バーバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à paバパパ」となっているが、仏語圏では、しいてカナ表記すれば「バルバパパ」という具合に r を発音する。仏語で Barbe à papa は元来「パパのひげ」のことで、転じて「綿菓子」をも意味する。このキャラクター名は、「綿菓子」と「パパ</string>
+    <string name="add_note_hint">填写笔记</string>
+    <string name="title_activity_read_only_note">ReadOnlyNoteActivity</string>
+    <string name="nodisponible">第一版本没这个功能 T_T 请原谅</string>
+    <string name="all">一共</string>
+    <string name="loaded">载入了。</string>
+</resources>
